@@ -1,6 +1,27 @@
 module.exports = {
+    encodeWord:encodeWord,
     decodeWord:decodeWord
 };
+
+function encodeWord(buffer, value, signed, bigEndian) {
+    if (signed && (value < 0)) {
+        value += Math.pow(256, buffer.length);
+    }
+
+    for (var i = 0; i < buffer.length; ++i) {
+        var byteValue =  value & 0xFF;
+
+        if (bigEndian) {
+            buffer[buffer.length - i - 1] = byteValue;
+        } else {
+            buffer[i] = byteValue;
+        }
+
+        value >>= 8;
+    }
+
+    return buffer;
+}
 
 function decodeWord(buffer, signed, bigEndian) {
     var value = 0;
