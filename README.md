@@ -23,9 +23,9 @@ API
 Example
 ----------
 ```javascript
-   var bite = require('bite');
+var bite = require('bite');
 
-   var buffer = new Buffer([0xFF, 0xFF]);
-   var value = bite.decodeWord(buffer, true); // = -1
-   var word = bite.encodeWord(new Buffer(2), value); // = <Buffer ff ff>
+var buffer = new Buffer([0xFF, 0xFF]);
+var value = bite.decodeWord(buffer, true); // = -1
+var word = bite.encodeWord(new Buffer(2), value); // = <Buffer ff ff>
 ```
