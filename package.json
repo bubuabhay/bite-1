@@ -1,6 +1,6 @@
 {
     "name":"bite",
-    "version":"0.1.0-2",
+    "version":"0.1.0-3",
     "main":"index.js",
     "description":"Lightweight library for word decoding/encoding, in pure javascript.",
     "keywords":["binary", "byte string", "encoding", "decoding", "signed",
