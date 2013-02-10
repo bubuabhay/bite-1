@@ -2,5 +2,16 @@
     "name":"bite",
     "version":"0.1.0",
     "main":"index.js",
+    "description":"Lightweight library for word decoding/encoding, in pure javascript.",
+    "keyword":["binary", "byte string", "encoding", "decoding"],
+    "repository":{ "type":"git",
+        "url":"https://github.com/martinvl/bite.git"
+    },
+    "author":{
+        "name":"Martin V. Larsen",
+        "email":"martin@melvon.com"
+    },
+    "homepage":"https://github.com/martinvl/bite",
+    "bugs":"https://github.com/martinvl/bite/issues",
     "dependencies":{}
 }
