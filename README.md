@@ -15,7 +15,7 @@ API
 
 * **encodeWord**(< _Buffer_ >buffer, < _number_ >value, [< _bool_ >signed], [< _bool_ >bigEndian]) - (_buffer_)  
     Encodes a number `value` into a byte string word of the same length as
-    `buffer, and stores the result in `buffer`. Will create the word as signed
+    `buffer`, and stores the result in `buffer`. Will create the word as signed
     if `signed` is set to `true` (`false` is default), and big endian if
     `bigEndian` is set to `true` (`false` is default). The buffer provided is
     returned for convenience.
